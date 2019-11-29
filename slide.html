@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src = 'http://code.jquery.com/jquery-3.3.1.js'></script>
+    <style>
+      .slide{
+        width:210px;
+        border: 2px solid #333;
+        box-shadow: 2px 2px 2px #000;
+        float: left;
+        margin-top: 30px;
+        margin-right: 20px;
+      }
+    </style>
+    <script>
+      $(document).ready(function(){
+        $('#sup').click(function(){
+          $('.slide').slideUp(3000);
+        });
+        $('#sdown').click(function(){
+          $('.slide').slideDown(3000);
+        });
+        $('#sToggle').click(function(){
+          $('.slide').slideToggle(3000);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <form>
+      <input type="button" id="sup" value="slideUp">
+      <input type="button" id="sdown" value="slideDown">
+      <input type="button" id="sToggle" value="slideToggle">
+    </form>
+    <div class="slide">
+        <img src="image/1.jpg" width=200 height=140>
+    </div>
+    <div class="slide">
+        <img src="image/2.jpg" width=200 height=140>
+    </div>
+    <div class="slide">
+        <p width=200 height = 140>어쩌구 저쩌구</p>
+    </div>
+
+  </body>
+</html>
