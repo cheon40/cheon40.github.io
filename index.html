@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title></title>
-    <script src = 'http://code.jquery.com/jquery-3.4.1.js'></script>
+    <script src = 'http://code.jquery.com/jquery-3.3.1.js'></script>
     <style>
       #gallery{
         width: 950px;
@@ -13,10 +14,8 @@
         border-radius: 15px;
       }
       ul{list-style: none};
-      ul li{
+      ul li {
         display: inline;
-        float: left;
-        padding:10px;
       }
       .bigpic{
         position: absolute;
@@ -29,6 +28,8 @@
         border: 2px dotted red;
         width: 200px;
         height: 140px;
+        float: left;
+        margin-left: 10px;
       }
     </style>
     <script>
@@ -51,12 +52,6 @@
         $("#big3").click(function(){
           $("#big3").fadeOut(1000);
         });
-        $("#s4").click(function(){
-          $("#big4").fadeIn(1000);
-        });
-        $("#big4").click(function(){
-          $("#big4").fadeOut(1000);
-        });
       });
     </script>
   </head>
@@ -76,12 +71,7 @@
           <img src="image/5.jpg" id="s3" class="smallpic">
           <img src="image/6.jpg" id="big3" class="bigpic">
         </li>
-        <li>
-          <img src="image/4.jpg" id="s4" class="smallpic">
-          <img src="image/5.jpg" id="big4" class="bigpic">
-        </li>
       </ul>
-
     </div>
   </body>
 </html>
